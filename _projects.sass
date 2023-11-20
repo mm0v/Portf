@@ -1,0 +1,73 @@
+.projects
+    padding: 12rem 0
+    .main-container
+        max-width: 120rem
+        margin: auto
+        width: 92%
+        .heading-sec__mb-bg
+            margin-bottom: 11rem
+            .heading-sec__main
+                display: block
+                font-size: 4rem
+                text-transform: uppercase
+                letter-spacing: 1px
+                letter-spacing: 3px
+                text-align: center
+                margin-bottom: 3.5rem
+                position: relative
+                color: #111
+                font-weight: bold
+            .heading-sec__sub
+                display: block
+                text-align: center
+                color: #555
+                font-size: 2rem
+                font-weight: 500
+                max-width: 80rem
+                margin: auto
+                line-height: 1.6
+    .projects__content
+        .projects__row
+            display: grid
+            grid-template-columns: 1.5fr 1fr
+            grid-gap: 5rem
+            margin-bottom: 11rem
+            .projects__row-img-cont
+                overflow: hidden
+                .projects__row-img
+                    width: 100%
+                    display: block
+                    -o-object-fit: cover
+                    object-fit: cover
+        .projects__row-content
+            padding: 2rem 0
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: flex-start
+            .projects__row-content-title
+                font-weight: 700
+                font-size: 2.8rem
+                margin-bottom: 2rem
+            .projects__row-content-desc
+                font-size: 1.8rem
+                color: #666
+                max-width: 60rem
+                line-height: 1.7
+                margin-bottom: 3rem
+            .btn--theme
+                background: #7843e9
+                color: #fff
+            .btn--med
+                padding: 1.5rem 5rem
+                font-size: 1.6rem
+                &:hover
+                    transform: translateY(-2.8px)
+
+    @media (max-width: 900px)
+        .projects__content
+            .projects__row
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center

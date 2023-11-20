@@ -1,0 +1,79 @@
+.home-hero
+    position: relative
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://i.postimg.cc/Kz4BFnkG/Screenshot-2023-11-14-005641.png)
+    background-position: center
+    height: 100vh
+    min-height: 80rem
+    max-height: 120rem
+    .home-hero__content
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        max-width: 90rem
+        width: 92%
+        .heading-primary
+            text-transform: uppercase
+            text-align: center
+            font-weight: 800
+            color: #111
+            font-size: 5.6rem
+            letter-spacing: 3px
+        .home-hero__info
+            margin: 3rem auto 0 auto
+            max-width: 80rem
+            .text-primary
+                color: #333 !important
+                font-size: 30px
+                text-align: center
+                width: 100%
+                line-height: 1.6
+        .home-hero__cta
+            margin-top: 5rem
+            text-align: center
+            .btn--bg
+                padding: 1.5rem 8rem
+                font-size: 2rem
+                transition: .28s
+                &:hover
+                    transform: translateY(-6px)
+                    background-color: #f40182
+                    color: #ffff
+
+    .home-hero__socials
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        background: #fff
+        box-shadow: rgba(100,100,111,.2) 0 7px 29px 0
+        padding: .8rem
+        .home-hero__social
+            transition: .4s
+            width: 5rem
+            &:hover
+                background: #64646459
+                border-radius: 10px
+                transition: .4s
+            .home-hero__social-icon-link
+                display: block
+                width: 100%
+                padding: 10px 13.4px
+                border-radius: 5px
+                margin: 10px 0
+                .home-hero__social-icon
+                    font-size: 26px
+                .fa-github
+                    color: #333
+                .fa-instagram
+                    color: #f40182
+
+    @media (max-width: 992px)
+        .home-hero__socials
+            display: none
+    @media ( max-width: 768px)
+        .home-hero__content
+            .heading-primary
+                font-size: 24px
+            .home-hero__info
+                .text-primary
+                    font-size: 18px
